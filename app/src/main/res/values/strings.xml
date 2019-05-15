@@ -16,7 +16,7 @@
     <string name="welcome">Welcome to</string>
     <string name="gpsapi">Google Play Services Api</string>
     <string name="tvInfo">These are your account information:</string>
-    <string name="logoutError">LOGOUT ERROR\nPLEASE RETRY</string>
+    <string name="logoutError">LOGOUT ERROR\nPLEASE TRY AGAIN</string>
     <string name="mapsUrl">https://www.google.com/maps/@%s,%s,10z</string>
     <string name="locError">LOCALIZATION ERROR\nPLEASE TRY AGAIN</string>
     <string name="btnMaps">Open Maps</string>
@@ -32,4 +32,5 @@
     <string name="gpsError"><![CDATA[---> GPS error <---]]></string>
     <string name="gpsAPI">Google Play Services Api</string>
     <string name="exitMessage">Press again to exit!</string>
+    <string name="loginError">LOGIN ERROR\nPLEASE TRY AGAIN</string>
 </resources>

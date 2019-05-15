@@ -33,4 +33,5 @@
     <string name="gpsError"><![CDATA[---> Errore GPS <---]]></string>
     <string name="gpsAPI">Google Play Services Api</string>
     <string name="exitMessage">Premi ancora per uscire!</string>
+    <string name="loginError">ERRORE NEL LOGIN\nPER FAVORE RIPROVA</string>
 </resources>
