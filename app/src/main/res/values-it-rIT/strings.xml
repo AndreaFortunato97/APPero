@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APPero</string>
+    <string name="btnLocation">Posizione</string>
+    <string name="btnLogout">\tLogout</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="tvInfoLocation">"Informazioni localizzazione"</string>
+    <string name="latlon">Latitudine: %f &amp; Longitudine: %f</string>
+    <string name="precision">Precisione: %d metri e %d centimetri</string>
+    <string name="altitude">Altitudine: %d metri e %d centimetri</string>
+    <string name="provider">Provider: %s</string>
+    <string name="speed">Velocità: %.2f ± %.2f (m/s)</string>
+    <string name="altitudeOreo">Altitudine: %d metri e %d centimetri ± %.2f metri</string>
+    <string name="tvWelcome">Non sei loggato!\nPer favore scegli un\'opzione</string>
+    <string name="btnExit">Esci</string>
+    <string name="welcome">Benvenuto in</string>
+    <string name="gpsapi">Google Play Services Api</string>
+    <string name="tvInfo">Queste sono le informazioni del tuo account</string>
+    <string name="logoutError">ERRORE NEL LOGOUT\nPER FAVORE RIPROVA</string>
+    <string name="mapsUrl">https://www.google.com/maps/@%s,%s,10z</string>
+    <string name="locError">ERRORE LOCALIZZAZIONE\nPER FAVORE RIPROVA</string>
+    <string name="btnMaps">Apri Maps</string>
+    <string name="name">\t\tNome: %s</string>
+    <string name="surname">\t\tCognome: %s</string>
+    <string name="email">\t\tEmail: %s</string>
+    <string name="grantPerm"><![CDATA[---> Per favore concedi i permessi per accedere alla posizione <---]]></string>
+    <string name="installGPS"><![CDATA[---> Per favore installa/aggiorna i Google Play Services! <---]]></string>
+    <string name="permDeniedd"><![CDATA[Permessi negati \'permanentemente\'.\Concedili dal\'app \'Impostazioni->Permessi\']]></string>
+    <string name="permError"><![CDATA[---> Errore nei permessi <---]]></string>
+    <string name="permDenied"><![CDATA[Permessi negati permanentemente (spuntando "Non chiedermelo più"). Per favore concedili dall'app \'Impostazioni->Permessi\'.\n\nVuoi aprire ora questa pagina?]]></string>
+    <string name="gpsDisabled">Hai il GPS disabilitato!\nVuoi abilitarlo?</string>
+    <string name="gpsError"><![CDATA[---> Errore GPS <---]]></string>
+    <string name="gpsAPI">Google Play Services Api</string>
+    <string name="exitMessage">Premi ancora per uscire!</string>
+</resources>

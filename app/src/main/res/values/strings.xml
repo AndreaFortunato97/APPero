@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">APPero</string>
+    <string name="btnLocation">Location</string>
+    <string name="btnLogout">\tLogout</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="tvInfoLocation">These are your location info</string>
+    <string name="latlon">Latitude: %f &amp; Longitude: %f</string>
+    <string name="precision">Precision: %d meters and %d centimeters</string>
+    <string name="altitude">Altitude: %d meters and %d centimeters</string>
+    <string name="provider">Provider: %s</string>
+    <string name="speed">Speed: %.2f ± %.2f (m/s)</string>
+    <string name="altitudeOreo">Altitude: %d meters and %d centimeters ± %.2f meters</string>
+    <string name="tvWelcome">You are not logged in!\nPlease choose an option below</string>
+    <string name="btnExit">Exit</string>
+    <string name="welcome">Welcome to</string>
+    <string name="gpsapi">Google Play Services Api</string>
+    <string name="tvInfo">These are your account information:</string>
+    <string name="logoutError">LOGOUT ERROR\nPLEASE RETRY</string>
+    <string name="mapsUrl">https://www.google.com/maps/@%s,%s,10z</string>
+    <string name="locError">LOCALIZATION ERROR\nPLEASE TRY AGAIN</string>
+    <string name="btnMaps">Open Maps</string>
+    <string name="name">\t\tName: %s</string>
+    <string name="surname">\t\tSurname: %s</string>
+    <string name="email">\t\tEmail: %s</string>
+    <string name="grantPerm"><![CDATA[---> Please grant the permissions to access the position <---]]></string>
+    <string name="installGPS"><![CDATA[---> Please install/update Google Play Services! <---]]></string>
+    <string name="permDeniedd"><![CDATA[Permissions \'permanently\' denied.\nGrant them from \'Settings->Permissions\' app page]]></string>
+    <string name="permError"><![CDATA[---> Permissions error <---]]></string>
+    <string name="permDenied"><![CDATA[Permissions permanently denied (with "Don\'t show again" checkbox). Please grant them from \'Settings->Permissions\' app page.\n\nDo you want to open it now?]]></string>
+    <string name="gpsDisabled">You have GPS disabled! Do you want to enable it?</string>
+    <string name="gpsError"><![CDATA[---> GPS error <---]]></string>
+    <string name="gpsAPI">Google Play Services Api</string>
+    <string name="exitMessage">Press again to exit!</string>
+</resources>

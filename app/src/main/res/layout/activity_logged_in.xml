@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLoggedIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myactivities.LoggedInActivity">
+
+    <it.appero.esonero.myviews.MyButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mybutton"
+        android:drawableStart="@drawable/logout_icon"
+        android:padding="10dp"
+        android:text="@string/btnLogout"
+        ads:layout_constraintBottom_toTopOf="@+id/adView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <it.appero.esonero.myviews.MyButton
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mybutton"
+        android:text="@string/btnLocation"
+        ads:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:text="@string/tvInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="@string/name"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvSurname"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="@string/surname"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="@string/email"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurname" />
+
+    <it.appero.esonero.myviews.MyTextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/gpsAPI"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <!-- AD PERSONALE. SERVE UN SITO WEB PER VISUALIZZARLA
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3324099742825481/6571891135"
+        ads:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" /> -->
+
+    <!-- AD PERSONALE. SERVE UN SITO WEB PER VISUALIZZARLA
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3324099742825481/8091489389"
+        ads:layout_constraintBottom_toTopOf="@+id/adView"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" /> -->
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

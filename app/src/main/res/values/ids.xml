@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="btnMainLang"/>
+    <item type="id" name="btnLoggedInLang"/>
+    <item type="id" name="btnLocationLang"/>
+</resources>
