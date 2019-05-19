@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btnLang = new MyLangButton(this, layout, R.id.btnMainLang, R.drawable.enflag); // Se la lingua impostata è 'Italiano' allora crea il tasto con la bandiera 'Regno Unito'
         }
 
-        // Creo un'istanza 'GoogleSignInOptions', necessaria a configurare ciò che verrà chiesto nella riga (in questo caso l'email) [56]
+        // Creo un'istanza 'GoogleSignInOptions', necessaria a configurare ciò che verrà chiesto nella riga [56] (in questo caso l'email)
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -80,19 +80,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.sign_in_button: // Alla pressione del tasto di Login
-                signIn(); // Esegui la funzione 'signIn()', presente alla riga [121]
+                signIn(); // Eseguo il metodo 'signIn()', presente alla riga [121]
                 break;
             case R.id.btnExit: // Alla pressione del tasto di uscita
-                finishAffinity(); // Chiudi tutte le activity, comprese quelle in stato di 'Pausa' e 'Stop'
+                finishAffinity(); // Chiudo tutte le activity, comprese quelle in stato di 'Pausa' e 'Stop'
                 break;
             case R.id.btnMainLang: // Alla pressione del tasto di cambio lingua
                 if(btnLang.getLanguage() == R.drawable.itflag) { // Se il bottone ha la bandiera 'Italia'
                     String languageToLoad  = "it";
                     Locale locale = new Locale(languageToLoad);
-                    Locale.setDefault(locale); // Imposta la lingua dell'applicazione in Italiano
+                    Locale.setDefault(locale); // Imposto la lingua dell'applicazione in Italiano
                     Configuration config = new Configuration();
                     config.locale = locale;
-                    getResources().updateConfiguration(config,this.getResources().getDisplayMetrics()); // Aggiorna la configurazione (impostazione interna) dell'applicazione con la nuova lingua
+                    getResources().updateConfiguration(config,this.getResources().getDisplayMetrics()); // Aggiorno la configurazione (impostazione interna) dell'applicazione con la nuova lingua
 
                     // Riavvio l'activity
                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
@@ -102,10 +102,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else { // Se il bottone non ha la bandiera 'Italia'
                     String languageToLoad  = "en";
                     Locale locale = new Locale(languageToLoad);
-                    Locale.setDefault(locale); // Imposta la lingua dell'applicazione in Inglrse
+                    Locale.setDefault(locale); // Imposto la lingua dell'applicazione in Inglese
                     Configuration config = new Configuration();
                     config.locale = locale;
-                    getResources().updateConfiguration(config,this.getResources().getDisplayMetrics());
+                    getResources().updateConfiguration(config,this.getResources().getDisplayMetrics()); // Aggiorno la configurazione (impostazione interna) dell'applicazione con la nuova lingua
 
                     // Riavvio l'activity
                     Intent intent = new Intent(MainActivity.this, MainActivity.class);
@@ -123,11 +123,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) { // Entro in questa funziona quando esco dall'activity di Login creata alla riga [123]
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) { // Entro in questo metodo quando esco dall'activity di Login creata alla riga [123]
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 1) { // Risultato ritornato dall'avvio dell'intent 'signInIntent' (riga [123]), con requestCode pari a 1
-            try { // Il 'try' e' di sicurezza, in caso 'getLastSignInAccount dovesse fallire
+            try { // Il 'try' è di sicurezza, in caso 'getLastSignInAccount dovesse fallire
 
                 // Assegna alla variabile 'account' quello con il quale è appena stato effettuato il login
                 MainActivity.account = GoogleSignIn.getLastSignedInAccount(this);
